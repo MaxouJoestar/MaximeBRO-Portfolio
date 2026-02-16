@@ -1,77 +1,109 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Maxime | Cybersecurity Student</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxime Bro | Portfolio Cybersécurité</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-<h1>Maxime</h1>
-<p>Étudiant en Cybersécurité — Ynov Campus</p>
-</header>
+    <canvas id="background"></canvas>
 
-<section>
-<h2>À propos</h2>
-<p>
-Étudiant en première année de cybersécurité à Ynov Montpellier.
-Passionné d’informatique et de sécurité, je recherche un stage été 2026
-puis une alternance pour septembre 2026.
-</p>
-</section>
+    <header class="hero">
+        <h1>Maxime <span>Bro</span></h1>
+        <p>Étudiant en Cybersécurité — Ynov Montpellier</p>
+        <div class="hero-contact">
+            <span>📍 Montpellier</span> | <span>📧 maximebro@hotmail.com</span>
+        </div>
+        <a href="#about" class="btn" style="margin-top: 30px;">Découvrir mon profil</a>
+    </header>
 
-<section>
-<h2>Compétences</h2>
-<ul>
-<li>Linux / Windows</li>
-<li>Réseaux (TCP/IP, DNS, HTTP)</li>
-<li>Bases cybersécurité</li>
-<li>HTML / CSS</li>
-<li>Java (POO)</li>
-<li>Git / GitHub</li>
-</ul>
-</section>
+    <section id="about" class="fade">
+        <h2>Qui je suis</h2>
+        <div class="card">
+            <p>J'ai 19 ans, actuellement en première année de Bachelor Cybersécurité à Ynov Montpellier. Mon attirance pour l'informatique et l'électronique ne date pas d'hier : j'ai toujours été fasciné par le fonctionnement des machines, qu'il s'agisse de lignes de code ou de composants physiques.</p>
+            
+            <p>Je suis ce qu'on appelle un "touche-à-tout". Dans mon temps libre, je n'hésite pas à <strong>bricoler ma voiture</strong> ou à <strong>démonter des ordinateurs</strong> pour les réparer ou comprendre leur architecture interne. Cette double attirance pour le <strong>matériel (physique)</strong> et le <strong>logiciel</strong> me donne une vision globale indispensable en cybersécurité.</p>
+            
+            <p>Mes expériences variées (ouvrier, animateur, surveillant) m'ont forgé un mental d'acier. Je suis animé par une <strong>détermination sans faille</strong> et une motivation profonde pour atteindre mes objectifs et devenir un expert du domaine.</p>
+        </div>
+    </section>
 
-<section>
-<h2>Projets</h2>
+    <section id="skills" class="fade">
+        <h2>Compétences & Apprentissage</h2>
+        <div class="grid">
+            <div class="card tech">
+                <h3>Réseau & Infra</h3>
+                <ul>
+                    <li>Architecture Réseau & TCP/IP</li>
+                    <li>Virtualisation (VMware, VirtualBox)</li>
+                    <li>Configuration SSH & Services</li>
+                </ul>
+            </div>
+            <div class="card tech">
+                <h3>Initiation Cyber</h3>
+                <ul>
+                    <li>Recherche OSINT</li>
+                    <li>Bases du Pentest</li>
+                    <li>Sécurisation système</li>
+                </ul>
+            </div>
+            <div class="card tech">
+                <h3>Hardware & OS</h3>
+                <ul>
+                    <li>Dépannage & Montage PC</li>
+                    <li>Maintenance Électronique</li>
+                    <li>Admin Linux & Windows</li>
+                </ul>
+            </div>
+            <div class="card tech">
+                <h3>Relationnel & Pro</h3>
+                <ul>
+                    <li>Gestion de la relation client</li>
+                    <li>Communication & Écoute</li>
+                    <li>Travail d'équipe (Agilité)</li>
+                </ul>
+            </div>
+            <div class="card tech">
+                <h3>Outils & Dev</h3>
+                <ul>
+                    <li>Gestion de versions Git</li>
+                    <li>Bases Python & SQL</li>
+                    <li>Bases HTML / CSS</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<div class="project">
-<h3>Forum en Go</h3>
-<p>Développement backend avec gestion utilisateurs et modération.</p>
-</div>
+    <section id="stage" class="fade">
+        <h2>Stage — Été 2026</h2>
+        <div class="card highlights">
+            <p><strong>Objectif : Développer mes compétences sur le terrain</strong></p>
+            <p>Je souhaite intégrer une équipe technique pour approfondir mes bases en administration réseau et découvrir l'aspect opérationnel de la sécurité informatique.</p>
+            <ul>
+                <li>📅 <strong>Disponibilité :</strong> Dès le 23 juin 2026 (175h)</li>
+                <li>🎯 <strong>Missions visées :</strong> Support, Infra Réseau, Junior SOC</li>
+                <li>📍 <strong>Localisation :</strong> Montpellier, Nîmes, Avignon ou Remote</li>
+            </ul>
+            <div style="text-align: center; margin-top: 25px;">
+                <a class="btn" href="cv.pdf" target="_blank">Télécharger mon CV (PDF)</a>
+            </div>
+        </div>
+    </section>
 
-<div class="project">
-<h3>Serveur Web multi-app</h3>
-<p>Reverse proxy, HTTPS, sous-domaines sur VMs.</p>
-</div>
+    <section id="alternance" class="fade">
+        <h2>Alternance — Septembre 2026</h2>
+        <div class="card">
+            <p>Mobile sur l'axe <strong>Montpellier - Nîmes - Avignon</strong> ou en <strong>Remote</strong>, je recherche une alternance pour ma deuxième année afin de m'investir durablement dans des projets de cybersécurité.</p>
+            <p style="margin-top: 15px;">📞 <strong>06 27 70 40 02</strong></p>
+        </div>
+    </section>
 
-<div class="project">
-<h3>E-commerce Java</h3>
-<p>Projet POO + API REST.</p>
-</div>
+    <footer>
+        <p>© Maxime Bro 2026 — Étudiant Cybersécurité</p>
+    </footer>
 
-</section>
-
-<section>
-<h2>Formation</h2>
-<p>Ynov Campus — Cybersécurité (2025–2028)</p>
-<p>Bac Technologique STI2D SIN</p>
-</section>
-
-<section>
-<h2>Contact</h2>
-<p>📧 maximebro@hotmail.com</p>
-<p>📞 0627704002</p>
-<p>📍 Montpellier</p>
-
-<a href="cv.pdf" download>Télécharger mon CV</a>
-</section>
-
-<footer>
-<p>© Maxime 2026</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
